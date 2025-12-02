@@ -1,2 +1,192 @@
-<!-- Pagina Digitale -->
-(PASTA QUI IL CODICE HTML COMPLETO DELLA PAGINA DIGITALE)
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Competenze Digitali – Pacchetti da 39€</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo-wrap">
+        <div class="logo-box">DS</div>
+        <div>
+          <div class="logo-text">AI Course Finder</div>
+          <div class="logo-sub">Piattaforma Corsi Online</div>
+        </div>
+      </div>
+      <div class="header-cta">
+        <button class="btn-header">Accedi</button>
+        <button class="btn-header btn-header-primary">Inizia ora</button>
+      </div>
+    </div>
+  </header>
+
+<main>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <div class="hero-badge">
+          💻 Competenze digitali • Pacchetti da 39€
+        </div>
+        <h1 class="hero-title">
+          Impara a usare <span>SPID, CIE, servizi online e pagamenti digitali</span> in sicurezza.
+        </h1>
+        <p class="hero-sub">
+          Pacchetti da 3 corsi per cittadini, lavoratori, PA e aziende che vogliono alfabetizzare
+          in modo semplice e guidato alle competenze digitali di base.
+        </p>
+        <div class="hero-actions">
+          <button class="btn-primary" onclick="location.href='index.html'">
+            Lascia che l’AI ti consigli il pacchetto
+          </button>
+          <button class="btn-secondary" onclick="document.getElementById('digitale-pacchetti').scrollIntoView({behavior:'smooth'})">
+            Vedi i pacchetti digitali
+          </button>
+        </div>
+        <div class="hero-note">
+          Ideale per progetti di <strong>Formazione 5.0</strong>, alfabetizzazione digitale e iniziative PA.
+        </div>
+      </div>
+      <div>
+        <div class="hero-card">
+          <div class="hero-card-inner">
+            <div class="hero-card-badge">Esempio pacchetto</div>
+            <div class="hero-card-title">Digitale Facile</div>
+            <div class="hero-card-sub">SPID • Home banking • Acquisti online</div>
+            <div class="hero-card-stats">
+              <div>
+                <div class="hero-card-stat-label">Corsi inclusi</div>
+                <div class="hero-card-stat-value">3</div>
+              </div>
+              <div>
+                <div class="hero-card-stat-label">Target</div>
+                <div class="hero-card-stat-value">Tutti</div>
+              </div>
+              <div>
+                <div class="hero-card-stat-label">Prezzo</div>
+                <div class="hero-card-stat-value">39 €</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="digitale-pacchetti">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Pacchetti Competenze Digitali</h2>
+        <p class="section-subtitle">
+          Esempi adattabili ai pacchetti reali presenti nell’Excel (Formazione 5.0, FNC, ecc.).
+        </p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-badge">Digitale</div>
+          <div class="card-title">Digitale Facile</div>
+          <div class="card-text">Per chi deve iniziare a usare i servizi online in autonomia.</div>
+          <ul class="card-list">
+            <li>SPID e CIE</li>
+            <li>Home banking e pagamenti digitali</li>
+            <li>Acquisti online sicuri</li>
+          </ul>
+          <div class="card-price-row">
+            <span class="card-price">39 €</span>
+            <button class="btn-card">Acquista pacchetto</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-badge">Digitale</div>
+          <div class="card-title">Ufficio Digitale</div>
+          <div class="card-text">Per lavoratori d’ufficio e PA che usano documenti digitali.</div>
+          <ul class="card-list">
+            <li>Gestione documentale digitale</li>
+            <li>PEC e firma digitale</li>
+            <li>Archiviazione e backup</li>
+          </ul>
+          <div class="card-price-row">
+            <span class="card-price">39 €</span>
+            <button class="btn-card">Acquista pacchetto</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-badge">Digitale</div>
+          <div class="card-title">Cyber Sicurezza Base</div>
+          <div class="card-text">Ridurre rischi di frodi, phishing e furto dati.</div>
+          <ul class="card-list">
+            <li>Phishing e truffe online</li>
+            <li>Protezione account e password</li>
+            <li>Uso sicuro di email e allegati</li>
+          </ul>
+          <div class="card-price-row">
+            <span class="card-price">39 €</span>
+            <button class="btn-card">Acquista pacchetto</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+  <footer class="footer">
+    © 2025 – Piattaforma Corsi AI • Tutti i diritti riservati.
+  </footer>
+
+  <script>
+    // FAQ toggle
+    document.querySelectorAll('.faq-item').forEach(function(item){
+      item.addEventListener('click', function(){
+        item.classList.toggle('open');
+      });
+    });
+
+    // Simulazione logica AI lato frontend (solo demo)
+    function simulaAI() {
+      const ambito    = document.getElementById('q-ambito') ? document.getElementById('q-ambito').value : '';
+      const result = document.getElementById('ai-result');
+      if (!result) return;
+
+      if (ambito === 'sicurezza') {
+        result.querySelector('.ai-result-title').textContent = "Pacchetto Sicurezza Lavoro Base";
+        result.querySelector('.ai-result-sub').textContent =
+          "Ideale per lavoratori e aziende che devono adempiere agli obblighi formativi di base in materia di sicurezza sul lavoro.";
+        result.querySelector('.ai-corsi-list').innerHTML = `
+          <li>D.Lgs 81/08 – principi generali</li>
+          <li>Prevenzione infortuni</li>
+          <li>Segnaletica di sicurezza</li>`;
+      } else if (ambito === 'digitale') {
+        result.querySelector('.ai-result-title').textContent = "Pacchetto Digitale Facile";
+        result.querySelector('.ai-result-sub').textContent =
+          "Perfetto per chi deve imparare a usare SPID, CIE, servizi online e pagamenti digitali in sicurezza.";
+        result.querySelector('.ai-corsi-list').innerHTML = `
+          <li>SPID e CIE</li>
+          <li>Home banking e pagamenti digitali</li>
+          <li>Acquisti online in sicurezza</li>`;
+      } else if (ambito === 'soft-skills') {
+        result.querySelector('.ai-result-title').textContent = "Pacchetto Soft Skills Starter";
+        result.querySelector('.ai-result-sub').textContent =
+          "Consigliato per chi vuole migliorare comunicazione, gestione del tempo e problem solving nel contesto lavorativo.";
+        result.querySelector('.ai-corsi-list').innerHTML = `
+          <li>Comunicazione efficace</li>
+          <li>Problem solving operativo</li>
+          <li>Gestione del tempo e delle priorità</li>`;
+      } else {
+        result.querySelector('.ai-result-title').textContent = "Pacchetto consigliato in base alle tue risposte";
+        result.querySelector('.ai-result-sub').textContent =
+          "Nella versione definitiva, l’AI analizzerà con precisione il tuo profilo e ti proporrà il pacchetto più adatto fra quelli disponibili.";
+        result.querySelector('.ai-corsi-list').innerHTML = `
+          <li>Esempio corso 1</li>
+          <li>Esempio corso 2</li>
+          <li>Esempio corso 3</li>`;
+      }
+    }
+  </script>
+</body>
+</html>
